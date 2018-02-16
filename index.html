@@ -5,91 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+	<script src="js/demo-rtl.js"></script>
+    <link rel="stylesheet" href="styles/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/libs/nanoscroller.css">
+	<link rel="stylesheet" type="text/css" href="styles/compiled/theme_styles.css">
+	<link rel="stylesheet" href="styles/libs/morris.css" type="text/css">
+	<link rel="stylesheet" href="styles/libs/daterangepicker.css" type="text/css">
+	<link rel="stylesheet" href="styles/libs/jquery-jvectormap-1.2.2.css" type="text/css">
+	<link rel="stylesheet" href="styles/libs/weather-icons.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Back de tutores</title>
 </head>
 
 <body>
-    <header class="navbar" id="header-navbar">
-        <div class="container">
-            <!-- Logotipo del producto -->
-            <a href="/" id="logo" class="navbar-brand">
-                <img src="/img/leobien/logo.png?v=2.5&amp;p=leobien" alt="" class="normal-logo logo-white" />
-            </a>
-
-            <div class="clearfix">
-                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
-                    <!-- Cuando la pantalla se hace pequeña se esconde menú -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar-ex1-collapse" data-toggle="collapse" type="button">
                     <span class="sr-only">Esconder Menú </span>
-                    <span class="fa fa-bars"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <div class="nav-no-collapse pull-right" id="header-nav">
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="dropdown">
-                            <a class="btn dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-archive"></i>
-                                <span id="classroom-dropdown-label" class="hidden-xs hidden-sm label-icons-header">2º</span>
-                            </a>
-                            <ul id="classroom_dropdown" class="dropdown-menu scrollable-menu" style="overflow: scroll; height: 400px;">
-                                <li id="classroom-dropdown-item-23" class="item item-product dropdown-classroom-item inactive-product">
-                                    <a class="classroom_selector" data-classroom-id="23" onclick="pageSwapper.updateClassroomDropdown(23, '2º')">
-                                        <i class="fa fa-plus"></i>
-                                        <b>2º</b>
-                                    </a>
-                                </li>
-                                <li id="classroom-dropdown-item-24" class="item item-product dropdown-classroom-item ">
-                                    <a class="classroom_selector" data-classroom-id="24" onclick="pageSwapper.updateClassroomDropdown(24, '4º')">
-                                        <i class="fa fa-plus"></i>
-                                        <b>4º</b>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown color-background-leobien">
-                            <a class="btn dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-graduation-cap"></i>
-                                <span class="hidden-xs hidden-sm label-icons-header">Cambiar de materia</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="item item-product ">
-                                    <a id="changeProduct" href="https://matematics.supertics.com">
-                                        <i class="fa fa-plus"></i>
-                                        <b>Matematics</b>
-                                    </a>
-                                </li>
-                                <li class="item item-product ">
-                                    <a id="changeProduct" href="https://englishtics.supertics.com">
-                                        <i class="fa fa-comment-o"></i>
-                                        <b>Englishtics</b>
-                                    </a>
-                                </li>
-                                <li class="item item-product inactive-product">
-                                    <a id="changeProduct" href="https://leobien.supertics.com">
-                                        <i class="fa fa-book"></i>
-                                        <b>Leobien</b>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                <a href="index.html" id="logo" class="navbar-brand">
+                    <img src="images/logo.png" alt="Brand" class="normal-logo logo-white" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-archive"></i>
+                            <span id="classroom-dropdown-label" class="hidden-xs hidden-sm label-icons-header">2º</span>
+                        </a>
+                        <ul id="classroom_dropdown" class="dropdown-menu scrollable-menu" style="overflow: scroll; height: 400px;">
+                            <li id="classroom-dropdown-item-23" class="item item-product dropdown-classroom-item inactive-product">
+                                <a class="classroom_selector" data-classroom-id="23" onclick="pageSwapper.updateClassroomDropdown(23, '2º')">
+                                    <i class="fas fa-plus"></i>
+                                    <b>2º</b>
+                                </a>
+                            </li>
+                            <li id="classroom-dropdown-item-24" class="item item-product dropdown-classroom-item ">
+                                <a class="classroom_selector" data-classroom-id="24" onclick="pageSwapper.updateClassroomDropdown(24, '4º')">
+                                    <i class="fas fa-plus"></i>
+                                    <b>4º</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span class="hidden-xs hidden-sm label-icons-header">Cambiar de materia</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="item item-product ">
+                                <a id="changeProduct" href="https://matematics.supertics.com">
+                                    <i class="fas fa-plus"></i>
+                                    <b>Matematics</b>
+                                </a>
+                            </li>
+                            <li class="item item-product ">
+                                <a id="changeProduct" href="https://englishtics.supertics.com">
+                                    <i class="fas fa-comment-o"></i>
+                                    <b>Englishtics</b>
+                                </a>
+                            </li>
+                            <li class="item item-product inactive-product">
+                                <a id="changeProduct" href="https://leobien.supertics.com">
+                                    <i class="fas fa-book"></i>
+                                    <b>Leobien</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li class="dropdown hidden-xs">
-                            <a id="linkEditProfile" onclick="pageSwapper.goTo('profile')">
-                                <i class="fa fa-edit"></i>
-                                <span class="hidden-xs hidden-sm label-icons-header">Editar perfil</span>
-                            </a>
-                        </li>
+                    <li class="dropdown hidden-xs">
+                        <a id="linkEditProfile" onclick="pageSwapper.goTo('profile')">
+                            <i class="fas fa-edit"></i>
+                            <span class="hidden-xs hidden-sm label-icons-header">Editar perfil</span>
+                        </a>
+                    </li>
 
 
-                        <li class="dropdown">
-                            <a href="/logout">
-                                <i class="fa fa-power-off"></i>
-                                <span class="hidden-xs hidden-sm label-icons-header"> Salir</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-power-off"></i>
+                            <span class="hidden-xs hidden-sm label-icons-header"> Salir</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
     <div class="col-lg-4 col-md-5 col-sm-6">
         <div class="main-box clearfix profile-box-menu">
             <div class="main-box-body clearfix">
@@ -106,25 +115,25 @@
                     <ul class="menu-items">
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fa fa-bell-o fa-lg"></i> New notifications
+                                <i class="fas fa-bell-o fa-lg"></i> New notifications
                                 <span class="label label-danger label-circle pull-right">82</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fa fa-user fa-lg"></i> Edit profile
+                                <i class="fas fa-user fa-lg"></i> Edit profile
                                 <span class="label label-success label-circle pull-right">13</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fa fa-calendar fa-lg"></i> Calendar
+                                <i class="fas fa-calendar fa-lg"></i> Calendar
                                 <span class="label label-warning label-circle pull-right">12</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fa fa-envelope fa-lg"></i> New message
+                                <i class="fas fa-envelope fa-lg"></i> New message
                                 <span class="label label-primary label-circle pull-right">44</span>
                             </a>
                         </li>
@@ -133,6 +142,100 @@
             </div>
         </div>
     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nanoscroller.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-merc-en.js"></script>
+	<script src="js/gdp-data.js"></script>
+	<script src="js/skycons.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $('.conversation-inner').slimScroll({
+                height: '352px',
+                alwaysVisible: false,
+                railVisible: true,
+                wheelStep: 5,
+                allowPageScroll: false
+            });
+            
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                },
+                barColor: '#3498db',
+                trackColor: '#f2f2f2',
+                scaleColor: false,
+                lineWidth: 8,
+                size: 130,
+                animate: 1500
+            });
+            
+            //WORLD MAP
+            $('#world-map').vectorMap({
+                map: 'world_merc_en',
+                backgroundColor: '#ffffff',
+                zoomOnScroll: false,
+                regionStyle: {
+                    initial: {
+                        fill: '#e1e1e1',
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 1
+                    },
+                    hover: {
+                        "fill-opacity": 0.8
+                    },
+                    selected: {
+                        fill: '#8dc859'
+                    },
+                    selectedHover: {
+                    }
+                },
+                markerStyle: {
+                    initial: {
+                        fill: '#e84e40',
+                        stroke: '#e84e40'
+                    }
+                },
+                markers: [
+                    {latLng: [38.35, -121.92], name: 'Los Angeles - 23'},
+                    {latLng: [39.36, -73.12], name: 'New York - 84'},
+                    {latLng: [50.49, -0.23], name: 'London - 43'},
+                    {latLng: [36.29, 138.54], name: 'Tokyo - 33'},
+                    {latLng: [37.02, 114.13], name: 'Beijing - 91'},
+                    {latLng: [-32.59, 150.21], name: 'Sydney - 22'},
+                ],
+                series: {
+                    regions: [{
+                        values: gdpData,
+                        scale: ['#6fc4fe', '#2980b9'],
+                        normalizeFunction: 'polynomial'
+                    }]
+                },
+                onRegionLabelShow: function(e, el, code){
+                    el.html(el.html()+' ('+gdpData[code]+')');
+                }
+            });
+
+            /* ANIMATED WEATHER */
+            var skycons = new Skycons({"color": "#03a9f4"});
+            // on Android, a nasty hack is needed: {"resizeClear": true}
+
+            // you can add a canvas by it's ID...
+            skycons.add("current-weather", Skycons.SNOW);
+
+            // start animation!
+            skycons.play();
+        });
+	</script>
 </body>
 
 </html>
