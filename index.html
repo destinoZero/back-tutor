@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navbar" id="header-navbar">
+        <div class="container">
+            <!-- Logotipo del producto -->
+            <a href="/" id="logo" class="navbar-brand">
+                <img src="/img/leobien/logo.png?v=2.5&amp;p=leobien" alt="" class="normal-logo logo-white" />
+            </a>
+
+            <div class="clearfix">
+                <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+                    <!-- Cuando la pantalla se hace pequeña se esconde menú -->
+                    <span class="sr-only">Esconder Menú </span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="nav-no-collapse pull-right" id="header-nav">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-archive"></i>
+                                <span id="classroom-dropdown-label" class="hidden-xs hidden-sm label-icons-header">2º</span>
+                            </a>
+                            <ul id="classroom_dropdown" class="dropdown-menu scrollable-menu" style="overflow: scroll; height: 400px;">
+                                <li id="classroom-dropdown-item-23" class="item item-product dropdown-classroom-item inactive-product">
+                                    <a class="classroom_selector" data-classroom-id="23" onclick="pageSwapper.updateClassroomDropdown(23, '2º')">
+                                        <i class="fa fa-plus"></i>
+                                        <b>2º</b>
+                                    </a>
+                                </li>
+                                <li id="classroom-dropdown-item-24" class="item item-product dropdown-classroom-item ">
+                                    <a class="classroom_selector" data-classroom-id="24" onclick="pageSwapper.updateClassroomDropdown(24, '4º')">
+                                        <i class="fa fa-plus"></i>
+                                        <b>4º</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown color-background-leobien">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-graduation-cap"></i>
+                                <span class="hidden-xs hidden-sm label-icons-header">Cambiar de materia</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="item item-product ">
+                                    <a id="changeProduct" href="https://matematics.supertics.com">
+                                        <i class="fa fa-plus"></i>
+                                        <b>Matematics</b>
+                                    </a>
+                                </li>
+                                <li class="item item-product ">
+                                    <a id="changeProduct" href="https://englishtics.supertics.com">
+                                        <i class="fa fa-comment-o"></i>
+                                        <b>Englishtics</b>
+                                    </a>
+                                </li>
+                                <li class="item item-product inactive-product">
+                                    <a id="changeProduct" href="https://leobien.supertics.com">
+                                        <i class="fa fa-book"></i>
+                                        <b>Leobien</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown hidden-xs">
+                            <a id="linkEditProfile" onclick="pageSwapper.goTo('profile')">
+                                <i class="fa fa-edit"></i>
+                                <span class="hidden-xs hidden-sm label-icons-header">Editar perfil</span>
+                            </a>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="/logout">
+                                <i class="fa fa-power-off"></i>
+                                <span class="hidden-xs hidden-sm label-icons-header"> Salir</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col-lg-4 col-md-5 col-sm-6">
+        <div class="main-box clearfix profile-box-menu">
+            <div class="main-box-body clearfix">
+                <div class="profile-box-header green-bg clearfix" style="background-image: url(../../img/samples/nature2.jpg);">
+                    <img src="img/samples/angelina-300.jpg" alt="" class="profile-img img-responsive" />
+                    <h2>Angelina
+                        <br/>Jolie</h2>
+                    <div class="job-position">
+                        Actress
+                    </div>
+                </div>
+
+                <div class="profile-box-content clearfix">
+                    <ul class="menu-items">
+                        <li>
+                            <a href="#" class="clearfix">
+                                <i class="fa fa-bell-o fa-lg"></i> New notifications
+                                <span class="label label-danger label-circle pull-right">82</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <i class="fa fa-user fa-lg"></i> Edit profile
+                                <span class="label label-success label-circle pull-right">13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <i class="fa fa-calendar fa-lg"></i> Calendar
+                                <span class="label label-warning label-circle pull-right">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <i class="fa fa-envelope fa-lg"></i> New message
+                                <span class="label label-primary label-circle pull-right">44</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
