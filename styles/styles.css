@@ -61,3 +61,7 @@ nav .fa  {
     display: flex;
     justify-content: center;
 }
+
+.project-box-footer {
+    margin-bottom: 3em;
+}

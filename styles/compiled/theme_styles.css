@@ -4008,7 +4008,7 @@ input[type="radio"] {
   border-radius: 3px 3px 0 0;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
-  .project-box .project-box-header .name a {
+  .project-box .project-box-header .name a, .project-box .project-box-header .name p {
     color: #fff;
     display: block;
     font-size: 1.4em;
