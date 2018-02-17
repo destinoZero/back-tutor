@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-	<script src="js/demo-rtl.js"></script>
-    <link rel="stylesheet" href="styles/fontawesome-all.min.css">
+    <script src="js/demo-rtl.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/libs/nanoscroller.css">
 	<link rel="stylesheet" type="text/css" href="styles/compiled/theme_styles.css">
 	<link rel="stylesheet" href="styles/libs/morris.css" type="text/css">
@@ -35,46 +35,46 @@
             <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-archive"></i>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-archive"></i>
                             <span id="classroom-dropdown-label" class="hidden-xs hidden-sm label-icons-header">2º</span>
                         </a>
                         <ul id="classroom_dropdown" class="dropdown-menu scrollable-menu" style="overflow: scroll; height: 400px;">
                             <li id="classroom-dropdown-item-23" class="item item-product dropdown-classroom-item inactive-product">
-                                <a class="classroom_selector" data-classroom-id="23" onclick="pageSwapper.updateClassroomDropdown(23, '2º')">
-                                    <i class="fas fa-plus"></i>
+                                <a href="#" class="classroom_selector active-sub" data-classroom-id="23" onclick="pageSwapper.updateClassroomDropdown(23, '2º')">
+                                    <i class="fa fa-plus"></i>
                                     <b>2º</b>
                                 </a>
                             </li>
                             <li id="classroom-dropdown-item-24" class="item item-product dropdown-classroom-item ">
-                                <a class="classroom_selector" data-classroom-id="24" onclick="pageSwapper.updateClassroomDropdown(24, '4º')">
-                                    <i class="fas fa-plus"></i>
+                                <a href="#" class="classroom_selector" data-classroom-id="24" onclick="pageSwapper.updateClassroomDropdown(24, '4º')">
+                                    <i class="fa fa-plus"></i>
                                     <b>4º</b>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="active dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-graduation-cap"></i>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-graduation-cap"></i>
                             <span class="hidden-xs hidden-sm label-icons-header">Cambiar de materia</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="item item-product ">
                                 <a id="changeProduct" href="https://matematics.supertics.com">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fa fa-plus"></i>
                                     <b>Matematics</b>
                                 </a>
                             </li>
                             <li class="item item-product ">
                                 <a id="changeProduct" href="https://englishtics.supertics.com">
-                                    <i class="fas fa-comment-o"></i>
+                                    <i class="fa fa-comment-o"></i>
                                     <b>Englishtics</b>
                                 </a>
                             </li>
                             <li class="item item-product inactive-product">
-                                <a id="changeProduct" href="https://leobien.supertics.com">
-                                    <i class="fas fa-book"></i>
+                                <a class="active-sub" id="changeProduct" href="https://leobien.supertics.com">
+                                    <i class="fa fa-book"></i>
                                     <b>Leobien</b>
                                 </a>
                             </li>
@@ -82,8 +82,8 @@
                     </li>
 
                     <li class="dropdown hidden-xs">
-                        <a id="linkEditProfile" onclick="pageSwapper.goTo('profile')">
-                            <i class="fas fa-edit"></i>
+                        <a href="#" id="linkEditProfile" onclick="pageSwapper.goTo('profile')">
+                            <i class="fa fa-edit"></i>
                             <span class="hidden-xs hidden-sm label-icons-header">Editar perfil</span>
                         </a>
                     </li>
@@ -91,7 +91,7 @@
 
                     <li class="dropdown">
                         <a href="#">
-                            <i class="fas fa-power-off"></i>
+                            <i class="fa fa-power-off"></i>
                             <span class="hidden-xs hidden-sm label-icons-header"> Salir</span>
                         </a>
                     </li>
@@ -115,25 +115,25 @@
                     <ul class="menu-items">
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fas fa-bell-o fa-lg"></i> New notifications
+                                <i class="fa fa-bell-o fa-lg"></i> New notifications
                                 <span class="label label-danger label-circle pull-right">82</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fas fa-user fa-lg"></i> Edit profile
+                                <i class="fa fa-user fa-lg"></i> Edit profile
                                 <span class="label label-success label-circle pull-right">13</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fas fa-calendar fa-lg"></i> Calendar
+                                <i class="fa fa-calendar fa-lg"></i> Calendar
                                 <span class="label label-warning label-circle pull-right">12</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="clearfix">
-                                <i class="fas fa-envelope fa-lg"></i> New message
+                                <i class="fa fa-envelope fa-lg"></i> New message
                                 <span class="label label-primary label-circle pull-right">44</span>
                             </a>
                         </li>

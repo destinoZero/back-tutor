@@ -264,9 +264,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   #logo span {
     display: none; } }
 #logo.navbar-brand > img {
-  margin: 0 auto;
+  margin: 0 0 0 30px;
   padding-right: 4px;
-  height: 30px; }
+  height: auto; }
   @media (max-width: 767px) {
     #logo.navbar-brand > img {
       height: 25px; } }
