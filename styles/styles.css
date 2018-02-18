@@ -35,6 +35,10 @@ html, body {
     background-color: #438819;
 }
 
+.navbar-nav .dropdown:nth-child(2) > a[aria-expanded="false"] {
+    background-color: #438819;
+}
+
 nav .fa  {
     font-size: 1em;
     color: #fff;
@@ -64,4 +68,8 @@ nav .fa  {
 
 .project-box-footer {
     margin-bottom: 4em;
+}
+
+.container {
+    margin-bottom: 10em;
 }

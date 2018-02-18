@@ -3780,11 +3780,11 @@ input[type="radio"] {
   border: 5px solid #fff;
   bottom: -45px;
   float: left;
-  height: 90px;
+  height: 100px;
   left: 50%;
-  margin-left: -45px;
+  margin-left: -50px;
   position: absolute;
-  width: 90px; }
+  width: 100px; }
 .profile-box-stats h2 {
   padding: 0 0 8px;
   margin: 0;
