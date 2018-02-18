@@ -73,3 +73,36 @@ nav .fa  {
 .container {
     margin-bottom: 10em;
 }
+
+tr.collapse.in {
+    display:table-row;
+  }
+
+.table {
+    width: 95%;
+    margin: 4em auto;
+}
+
+th {
+    text-align: center;
+}
+
+tr[data-toggle="collapse"] > td:first-child span {
+    cursor: pointer;
+}
+
+tr > td {
+    text-align: center;
+}
+
+th:first-child {
+    text-align: left;
+}
+
+.pupil-title {
+    background-color: rgb(255, 176, 139);
+}
+
+.teacher-title {
+    background-color: rgb(255, 212, 193);
+}
