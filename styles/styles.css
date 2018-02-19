@@ -132,3 +132,7 @@ h2 {
     font-size: 1.8em;
     color: #000;
 }
+
+.modal-body p {
+    text-indent: 40px;
+}
