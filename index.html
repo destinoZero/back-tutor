@@ -155,7 +155,8 @@
 
         <div class="row">
             <div class="col-xs-12 table-responsive">
-                <table class="table table-sm table-condensed table-hover table-striped table-noTopBorder">
+                <table class="table table-sm table-condensed table-noTopBorder">
+                    <caption>Selecciona un área:</caption>
                     <thead>
                         <tr>
                             <th>#</th>
@@ -169,7 +170,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr data-toggle="collapse" data-target=".geometria">
+                        <tr data-toggle="collapse" data-target=".geometria" class="success">
                             <td><span>Geometría +</span></td>
                             <td>58%</td>
                             <td>56%</td>
@@ -177,20 +178,20 @@
                             <td>B</td>
                             <td>78%</td>
                             <td>71%</td>
-                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
+                            <td></td>
                         </tr>
-                        <tr class="collapse geometria">
-                            <td><span>Identifica<br>triángulos</span></td>
+                        <tr class="collapse geometria warning">
+                            <td><span class="comp">Interpretar localizaciones y mapas</span></td>
                             <td>100%</td>
                             <td>45%</td>
                             <td>94%</td>
                             <td>C</td>
                             <td>84%</td>
                             <td>77%</td>
-                            <td></td>
+                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
                         <tr>
-                        <tr class="collapse geometria">
-                            <td><span>Clases<br>de ángulos</span></td>
+                        <tr class="collapse geometria warning" data-toggle="collapse" data-target=".geom-ang">
+                            <td><span class="comp">Usar puntos de referencia&nbsp;+</span></td>
                             <td>21%</td>
                             <td>25%</td>
                             <td>70%</td>
@@ -199,8 +200,8 @@
                             <td>89%</td>
                             <td></td>
                         </tr>
-                        <tr class="collapse geometria">
-                            <td><span>Ángulo<br>obtuso</span></td>
+                        <tr class="collapse geom-ang info">
+                            <td><span class="sub-comp">Posicionamiento</span></td>
                             <td>15%</td>
                             <td>56%</td>
                             <td>70%</td>
@@ -209,8 +210,8 @@
                             <td>81%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse geometria">
-                            <td><span>Ángulo<br>agudo</span></td>
+                        <tr class="collapse geom-ang info">
+                            <td><span class="sub-comp">Recorridos</span></td>
                             <td>0%</td>
                             <td>0%</td>
                             <td>0%</td>
@@ -219,212 +220,213 @@
                             <td>80%</td>
                             <td></td>
                         </tr>
-                        <tr data-toggle="collapse" data-target=".medidas">
+                        <tr data-toggle="collapse" data-target=".medidas" class="success">
                             <td><span>Medidas +</span></td>
-                            <td>58%</td>
-                            <td>56%</td>
-                            <td>89%</td>
-                            <td>B</td>
-                            <td>78%</td>
-                            <td>71%</td>
-                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
+                            <td>62%</td>
+                            <td>48%</td>
+                            <td>63%</td>
+                            <td>C</td>
+                            <td>80%</td>
+                            <td>76%</td>
+                            <td></td>
                         </tr>
-                        <tr class="collapse medidas">
-                            <td><span>Identifica<br>triángulos</span></td>
-                            <td>100%</td>
+                        <tr class="collapse medidas warning" data-toggle="collapse" data-target=".med-conv">
+                            <td><span class="comp">Comprender la conversión de unidades&nbsp;+</span></td>
+                            <td>87%</td>
                             <td>45%</td>
                             <td>94%</td>
                             <td>C</td>
-                            <td>84%</td>
-                            <td>77%</td>
+                            <td>80%</td>
+                            <td>67%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse medidas">
-                            <td><span>Clases<br>de ángulos</span></td>
-                            <td>21%</td>
-                            <td>25%</td>
-                            <td>70%</td>
-                            <td>D</td>
-                            <td>74%</td>
-                            <td>89%</td>
+                        <tr class="collapse info med-conv">
+                            <td><span class="sub-comp">Longitud</span></td>
+                            <td>23%</td>
+                            <td>22%</td>
+                            <td>65%</td>
+                            <td>C</td>
+                            <td>66%</td>
+                            <td>80%</td>
                             <td></td>
                         </tr>
-                        <tr class="collapse medidas">
-                            <td><span>Ángulo<br>obtuso</span></td>
-                            <td>15%</td>
-                            <td>56%</td>
-                            <td>70%</td>
+                        <tr class="collapse info med-conv">
+                            <td><span class="sub-comp">Masa</span></td>
+                            <td>17%</td>
+                            <td>52%</td>
+                            <td>74%</td>
                             <td>D</td>
-                            <td>71%</td>
-                            <td>81%</td>
+                            <td>76%</td>
+                            <td>82%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse medidas">
-                            <td><span>Ángulo<br>agudo</span></td>
+                        <tr class="collapse info med-conv">
+                            <td><span class="sub-comp">Capacidad</span></td>
+                            <td>2%</td>
+                            <td>5%</td>
+                            <td>4%</td>
+                            <td>--</td>
+                            <td>56%</td>
+                            <td>78%</td>
+                            <td></td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target=".num-op" class="success">
+                            <td><span>Numeros y operaciones&nbsp;+</span></td>
+                            <td>56%</td>
+                            <td>60%</td>
+                            <td>71%</td>
+                            <td>B</td>
+                            <td>69%</td>
+                            <td>75%</td>
+                            <td></td>
+                        </tr>
+                        <tr class="collapse num-op warning" data-toggle="collapse" data-target=".num-op-fracc">
+                            <td><span class="comp">Estudiar las fracciones&nbsp;+</span></td>
+                            <td>42%</td>
+                            <td>44%</td>
+                            <td>68%</td>
+                            <td>C</td>
+                            <td>80%</td>
+                            <td>79%</td>
+                            <td></td>
+                        <tr>
+                        <tr class="collapse info num-op-fracc">
+                            <td><span class="sub-comp">Aprender a usar las fracciones</span></td>
+                            <td>23%</td>
+                            <td>29%</td>
+                            <td>71%</td>
+                            <td>D</td>
+                            <td>83%</td>
+                            <td>85%</td>
+                            <td></td>
+                        </tr>
+                        <tr class="collapse num-op warning" data-toggle="collapse" data-target=".num-op-mult-div">
+                            <td><span class="comp">Comprender la multiplicación y la división&nbsp;+</span></td>
+                            <td>14%</td>
+                            <td>48%</td>
+                            <td>82%</td>
+                            <td>C</td>
+                            <td>74%</td>
+                            <td>83%</td>
+                            <td></td>
+                        <tr>
+                        <tr class="collapse num-op-mult-div info">
+                            <td><span class="sub-comp">Comprender el uso de cada operación</span></td>
                             <td>0%</td>
                             <td>0%</td>
                             <td>0%</td>
                             <td>--</td>
-                            <td>75%</td>
-                            <td>80%</td>
+                            <td>77%</td>
+                            <td>78%</td>
                             <td></td>
                         </tr>
-                        <tr data-toggle="collapse" data-target=".numeracion">
-                            <td><span>Numeración +</span></td>
-                            <td>58%</td>
-                            <td>56%</td>
+                        <tr class="collapse num-op-mult-div info">
+                            <td><span class="sub-comp">Mostrar gráficamente las operaciones</span></td>
+                            <td>1%</td>
+                            <td>0%</td>
+                            <td>7%</td>
+                            <td>--</td>
+                            <td>89%</td>
+                            <td>88%</td>
+                            <td></td>
+                        </tr>
+                        <tr data-toggle="collapse" data-target=".pens-alg" class="success">
+                            <td><span>Pensamiento algebráico&nbsp;+</span></td>
+                            <td>53%</td>
+                            <td>54%</td>
+                            <td>67%</td>
+                            <td>C</td>
+                            <td>67%</td>
+                            <td>83%</td>
+                            <td></td>
+                        </tr>
+                        <tr class="collapse pens-alg warning" data-toggle="collapse" data-target=".pens-alg-amp">
+                            <td><span class="comp">Extender y generalizar patrones geométricos y numéricos&nbsp;+</span></td>
+                            <td>23%</td>
+                            <td>52%</td>
                             <td>89%</td>
                             <td>B</td>
-                            <td>78%</td>
-                            <td>71%</td>
-                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
-                        </tr>
-                        <tr class="collapse numeracion">
-                            <td><span>Identifica<br>triángulos</span></td>
-                            <td>100%</td>
-                            <td>45%</td>
-                            <td>94%</td>
-                            <td>C</td>
-                            <td>84%</td>
-                            <td>77%</td>
+                            <td>88%</td>
+                            <td>74%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse numeracion">
-                            <td><span>Clases<br>de ángulos</span></td>
-                            <td>21%</td>
-                            <td>25%</td>
-                            <td>70%</td>
+                        <tr class="collapse pens-alg-amp info">
+                            <td><span class="sub-comp">Ampliar patrones y series</span></td>
+                            <td>34%</td>
+                            <td>28%</td>
+                            <td>72%</td>
                             <td>D</td>
-                            <td>74%</td>
-                            <td>89%</td>
-                            <td></td>
-                        </tr>
-                        <tr class="collapse numeracion">
-                            <td><span>Ángulo<br>obtuso</span></td>
-                            <td>15%</td>
-                            <td>56%</td>
                             <td>70%</td>
-                            <td>D</td>
-                            <td>71%</td>
                             <td>81%</td>
                             <td></td>
-                        <tr>
-                        <tr class="collapse numeracion">
-                            <td><span>Ángulo<br>agudo</span></td>
-                            <td>0%</td>
-                            <td>0%</td>
-                            <td>0%</td>
-                            <td>--</td>
-                            <td>75%</td>
-                            <td>80%</td>
-                            <td></td>
                         </tr>
-                        <tr data-toggle="collapse" data-target=".algebra">
-                            <td><span>Álgebra +</span></td>
-                            <td>58%</td>
-                            <td>56%</td>
-                            <td>89%</td>
-                            <td>B</td>
-                            <td>78%</td>
-                            <td>71%</td>
-                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
-                        </tr>
-                        <tr class="collapse algebra">
-                            <td><span>Identifica<br>triángulos</span></td>
-                            <td>100%</td>
-                            <td>45%</td>
-                            <td>94%</td>
-                            <td>C</td>
-                            <td>84%</td>
+                        <tr class="collapse pens-alg-amp info">
+                            <td><span class="sub-comp">Explicar patrones y series</span></td>
+                            <td>23%</td>
+                            <td>50%</td>
+                            <td>66%</td>
+                            <td>D</td>
                             <td>77%</td>
+                            <td>68%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse algebra">
-                            <td><span>Clases<br>de ángulos</span></td>
-                            <td>21%</td>
-                            <td>25%</td>
-                            <td>70%</td>
-                            <td>D</td>
-                            <td>74%</td>
-                            <td>89%</td>
-                            <td></td>
-                        </tr>
-                        <tr class="collapse algebra">
-                            <td><span>Ángulo<br>obtuso</span></td>
+                        <tr class="collapse pens-alg warning">
+                            <td><span class="comp">Analizar situaciones cambiantes</span></td>
                             <td>15%</td>
-                            <td>56%</td>
-                            <td>70%</td>
-                            <td>D</td>
-                            <td>71%</td>
-                            <td>81%</td>
-                            <td></td>
-                        <tr>
-                        <tr class="collapse algebra">
-                            <td><span>Ángulo<br>agudo</span></td>
-                            <td>0%</td>
-                            <td>0%</td>
-                            <td>0%</td>
+                            <td>3%</td>
+                            <td>40%</td>
                             <td>--</td>
-                            <td>75%</td>
-                            <td>80%</td>
+                            <td>68%</td>
+                            <td>70%</td>
                             <td></td>
                         </tr>
-                        <tr data-toggle="collapse" data-target=".estadistica">
-                            <td><span>Estadística +</span></td>
-                            <td>58%</td>
-                            <td>56%</td>
-                            <td>89%</td>
-                            <td>B</td>
-                            <td>78%</td>
-                            <td>71%</td>
-                            <td><a href="#" class="btn btn-xs btn-info">info</a></td>
-                        </tr>
-                        <tr class="collapse estadistica">
-                            <td><span>Identifica<br>triángulos</span></td>
-                            <td>100%</td>
-                            <td>45%</td>
-                            <td>94%</td>
+                        <tr data-toggle="collapse" data-target=".estad-prob" class="success">
+                            <td><span>Estadística y probabilidad&nbsp;+</span></td>
+                            <td>49%</td>
+                            <td>47%</td>
+                            <td>69%</td>
                             <td>C</td>
-                            <td>84%</td>
-                            <td>77%</td>
+                            <td>85%</td>
+                            <td>79%</td>
                             <td></td>
-                        <tr>
-                        <tr class="collapse estadistica">
-                            <td><span>Clases<br>de ángulos</span></td>
-                            <td>21%</td>
-                            <td>25%</td>
-                            <td>70%</td>
-                            <td>D</td>
-                            <td>74%</td>
+                        </tr>
+                        <tr class="collapse estad-prob warning">
+                            <td><span class="comp">Cuantificar la probabilidad</span></td>
+                            <td>53%</td>
+                            <td>38%</td>
+                            <td>65%</td>
+                            <td>C</td>
+                            <td>63%</td>
                             <td>89%</td>
                             <td></td>
+                        <tr>
+                        <tr class="collapse estad-prob warning" data-toggle="collapse" data-target=".estad-prob-centr">
+                            <td><span class="comp">Utilizar medidas de centralización&nbsp;+</span></td>
+                            <td>45%</td>
+                            <td>23%</td>
+                            <td>80%</td>
+                            <td>C</td>
+                            <td>75%</td>
+                            <td>76%</td>
+                            <td></td>
                         </tr>
-                        <tr class="collapse estadistica">
-                            <td><span>Ángulo<br>obtuso</span></td>
-                            <td>15%</td>
-                            <td>56%</td>
-                            <td>70%</td>
+                        <tr class="collapse estad-prob-centr info">
+                            <td><span class="sub-comp">Moda y mediana</span></td>
+                            <td>37%</td>
+                            <td>60%</td>
+                            <td>79%</td>
                             <td>D</td>
-                            <td>71%</td>
-                            <td>81%</td>
+                            <td>79%</td>
+                            <td>86%</td>
                             <td></td>
                         <tr>
-                        <tr class="collapse estadistica">
-                            <td><span>Ángulo<br>agudo</span></td>
-                            <td>0%</td>
-                            <td>0%</td>
-                            <td>0%</td>
-                            <td>--</td>
-                            <td>75%</td>
-                            <td>80%</td>
-                            <td></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
         <div class="row">
+            <h2>Comparativa de efectividad en Supertics matematics (4º de primaria)</h2>
             <div class="col-sm-6 col-sm-offset-3">
                 <figure>
                     <img src="images/efect_geometria.png" alt="Colours chart" class="img-responsive">
@@ -436,13 +438,13 @@
             <div class="col-sm-12 col-md-6">
                 <figure>
                     <img src="images/rend_horas.png" alt="Rendimiento por horas" class="img-responsive">
-                    <figcaption class="center">Efectividad por hora del día de todos los alumnos de Supertics en geometría</figcaption>
+                    <figcaption class="center">Rendimiento = efectividad x velocidad<br>de todos los alumnos de Supertics matematics de 4º</figcaption>
                 </figure>
             </div>
             <div class="col-sm-12 col-md-6">
                 <figure>
                     <img src="images/rend_dia.png" alt="Rendimiento por dias" class="img-responsive">
-                    <figcaption class="center">Efectividad por día de la semana (todos los alumnos de Supertics) en geometría</figcaption>
+                    <figcaption class="center">Rendimiento = efectividad x velocidad<br>de todos los alumnos de Supertics matematics de 4º</figcaption>
                 </figure>
             </div>
         </div>
